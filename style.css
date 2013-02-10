@@ -35,6 +35,9 @@ table {
   border-spacing: 0; }
 
 /* Global */
+* {
+  z-index: 3; }
+
 ::selection {
   background: black;
   color: white; }
