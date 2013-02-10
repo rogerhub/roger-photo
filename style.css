@@ -1,1 +1,119 @@
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}body{background:radial-gradient(#000 15%, transparent 16%) 0 0,radial-gradient(#000 15%, transparent 16%) 4px 4px,radial-gradient(rgba(255,255,255,0.1) 15%, transparent 20%) 0 1px,radial-gradient(rgba(255,255,255,0.1) 15%, transparent 20%) 4px 5px;background:-webkit-radial-gradient(#000 15%, transparent 16%) 0 0,-webkit-radial-gradient(#000 15%, transparent 16%) 4px 4px,-webkit-radial-gradient(rgba(255,255,255,0.1) 15%, transparent 20%) 0 1px,-webkit-radial-gradient(rgba(255,255,255,0.1) 15%, transparent 20%) 4px 5px;background-color:#282828;background-size:8px 8px}::selection{background:black;color:white}div#main,div#footer{background:white;box-shadow:0 0 15px rgba(0,0,0,0.15);color:black;font-family:Roboto, serif;font-size:14px;margin:40px auto;max-width:1140px;padding:26px}div#main a,div#footer a{color:#24798C}div#main a:active,div#footer a:active{color:red}div#main a:visited,div#footer a:visited{color:#551a8b}div#main blockquote,div#footer blockquote{border-left:3px solid #ccc;font-style:italic;margin-left:1em;opacity:0.65;padding-left:1em}div#main blockquote span,div#footer blockquote span{display:block;margin-left:2em;margin-top:0.4em}div#main h1,div#main h2,div#main h3,div#footer h1,div#footer h2,div#footer h3{color:#134541;display:block;font-family:Alike, serif;font-weight:normal}div#main h1,div#footer h1{border-bottom:3px solid #134541;font-size:3em;line-height:1em;margin-bottom:0.3em}div#main h2,div#footer h2{font-size:2em;line-height:1.4em}div#main blockquote,div#main p,div#main ol,div#main ul,div#footer blockquote,div#footer p,div#footer ol,div#footer ul{line-height:1.4em;margin-bottom:0.5em}div#main blockquote img,div#main p img,div#main ol img,div#main ul img,div#footer blockquote img,div#footer p img,div#footer ol img,div#footer ul img{box-shadow:0px 0px 10px rgba(0,0,0,0.45);box-sizing:border-box;display:block;height:auto;margin:1em;margin-left:0;padding:0.3em;width:100%}div#main blockquote img.vertical,div#main p img.vertical,div#main ol img.vertical,div#main ul img.vertical,div#footer blockquote img.vertical,div#footer p img.vertical,div#footer ol img.vertical,div#footer ul img.vertical{margin-left:auto;margin-right:auto;width:75%}div#main blockquote.entry-meta,div#main p.entry-meta,div#main ol.entry-meta,div#main ul.entry-meta,div#footer blockquote.entry-meta,div#footer p.entry-meta,div#footer ol.entry-meta,div#footer ul.entry-meta{opacity:0.65}div#main blockquote:last-child,div#main p:last-child,div#main ol:last-child,div#main ul:last-child,div#footer blockquote:last-child,div#footer p:last-child,div#footer ol:last-child,div#footer ul:last-child{margin-bottom:0}div#main blockquote:last-child img,div#main p:last-child img,div#main ol:last-child img,div#main ul:last-child img,div#footer blockquote:last-child img,div#footer p:last-child img,div#footer ol:last-child img,div#footer ul:last-child img{margin-bottom:0}div#main ol,div#main ul,div#footer ol,div#footer ul{list-style-type:square;margin-left:25px;padding-left:15px}div#footer{margin-top:0}div#footer span.nav{float:right}body.short div{max-width:450px !important}
+/*
+	Theme Name: Roger Photo
+	Theme URI: http://ryuc.org
+	Description: Theme for Roger Photo. Roger Yu Chen, or r.yu.c for short
+	Author: Roger Chen
+	Author URI: http://profile.rogerhub.com
+	Version: 1.0
+*/
+/* http://meyerweb.com/eric/tools/css/reset/ */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* Global */
+body {
+  background: radial-gradient(black 15%, transparent 16%) 0 0, radial-gradient(black 15%, transparent 16%) 4px 4px, radial-gradient(rgba(255, 255, 255, 0.1) 15%, transparent 20%) 0 1px, radial-gradient(rgba(255, 255, 255, 0.1) 15%, transparent 20%) 4px 5px;
+  background: -webkit-radial-gradient(black 15%, transparent 16%) 0 0, -webkit-radial-gradient(black 15%, transparent 16%) 4px 4px, -webkit-radial-gradient(rgba(255, 255, 255, 0.1) 15%, transparent 20%) 0 1px, -webkit-radial-gradient(rgba(255, 255, 255, 0.1) 15%, transparent 20%) 4px 5px;
+  background-color: #282828;
+  background-size: 8px 8px; }
+
+::selection {
+  background: black;
+  color: white; }
+
+div#main, div#footer {
+  background: white;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+  color: black;
+  font-family: Roboto, serif;
+  font-size: 14px;
+  margin: 40px auto;
+  max-width: 1140px;
+  padding: 26px; }
+div#main a, div#footer a {
+  color: #24798C; }
+div#main a:active, div#footer a:active {
+  color: red; }
+div#main a:visited, div#footer a:visited {
+  color: #551a8b; }
+div#main blockquote, div#footer blockquote {
+  border-left: 3px solid #ccc;
+  font-style: italic;
+  margin-left: 1em;
+  opacity: 0.65;
+  padding-left: 1em; }
+div#main blockquote span, div#footer blockquote span {
+  display: block;
+  margin-left: 2em;
+  margin-top: 0.4em; }
+div#main h1, div#main h2, div#main h3, div#footer h1, div#footer h2, div#footer h3 {
+  color: #134541;
+  display: block;
+  font-family: Alike, serif;
+  font-weight: normal; }
+div#main h1, div#footer h1 {
+  border-bottom: 3px solid #134541;
+  font-size: 3em;
+  line-height: 1em;
+  margin-bottom: 0.3em; }
+div#main h2, div#footer h2 {
+  font-size: 2em;
+  line-height: 1.4em; }
+div#main blockquote, div#main p, div#main ol, div#main ul, div#footer blockquote, div#footer p, div#footer ol, div#footer ul {
+  line-height: 1.4em;
+  margin-bottom: 0.5em; }
+div#main blockquote img, div#main p img, div#main ol img, div#main ul img, div#footer blockquote img, div#footer p img, div#footer ol img, div#footer ul img {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.45);
+  box-sizing: border-box;
+  display: block;
+  height: auto;
+  margin: 1em;
+  margin-left: 0;
+  padding: 0.3em;
+  width: 100%; }
+div#main blockquote img.vertical, div#main p img.vertical, div#main ol img.vertical, div#main ul img.vertical, div#footer blockquote img.vertical, div#footer p img.vertical, div#footer ol img.vertical, div#footer ul img.vertical {
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%; }
+div#main blockquote.entry-meta, div#main p.entry-meta, div#main ol.entry-meta, div#main ul.entry-meta, div#footer blockquote.entry-meta, div#footer p.entry-meta, div#footer ol.entry-meta, div#footer ul.entry-meta {
+  opacity: 0.65; }
+div#main blockquote:last-child, div#main p:last-child, div#main ol:last-child, div#main ul:last-child, div#footer blockquote:last-child, div#footer p:last-child, div#footer ol:last-child, div#footer ul:last-child {
+  margin-bottom: 0; }
+div#main blockquote:last-child img, div#main p:last-child img, div#main ol:last-child img, div#main ul:last-child img, div#footer blockquote:last-child img, div#footer p:last-child img, div#footer ol:last-child img, div#footer ul:last-child img {
+  margin-bottom: 0; }
+div#main ol, div#main ul, div#footer ol, div#footer ul {
+  list-style-type: square;
+  margin-left: 25px;
+  padding-left: 15px; }
+
+div#footer {
+  margin-top: 0; }
+div#footer span.nav {
+  float: right; }
+
+body.short div {
+  max-width: 450px !important; }
