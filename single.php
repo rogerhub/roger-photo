@@ -26,9 +26,13 @@ get_header();
 		echo "Next: $prevlink";
 	} else {
 		echo "No more posts.";
+		$recent_posts = wp_get_recent_posts(array('numberposts' => 1, 'post_status' => 'publish',));
+		if (count($recent_posts)) {
+			echo ' See <a href="' . get_permalink($recent_posts[0]['ID']) . '">the most recent one</a>.';
+		}
 	}
 
-?><span class="nav"><a href="/archive">Contact the psycho</a></span></p>
+	?><span class="nav"><a href="/archive"><?php echo rp_meta(); ?></a></span></p>
 </div>
 </div>
 </body>

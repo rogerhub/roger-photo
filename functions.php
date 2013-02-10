@@ -53,3 +53,24 @@ function rp_title() {
 		echo '404';
 	}
 }
+
+function rp_meta() {
+	$metas = <<<EOF
+About the psycho who writes this stuff
+Can I have more?
+Can I talk to you?
+Can I talk to you? You need help.
+Contact the sick freak
+Could there be any more?
+How much more could there be?
+Is there any more?
+Meta entities does available
+More trash and nonsense
+What kind of freak would write this stuff?
+What kind of twisted soul writes this?
+Who's the psycho who writes this?
+You need help, can we talk?
+EOF;
+	$metas = explode("\n", trim($metas));
+	return $metas[rand(0, count($metas) - 1)];
+}
