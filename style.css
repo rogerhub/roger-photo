@@ -47,7 +47,7 @@ body {
 
 div#container {
   margin: auto;
-  max-width: 1166px; }
+  max-width: 1272px; }
 
 div#main, div#footer {
   background: white;
@@ -65,9 +65,9 @@ div#main a:visited, div#footer a:visited {
   color: #551a8b; }
 div#main blockquote, div#footer blockquote {
   border-left: 3px solid #ccc;
+  color: #6a6a6a;
   font-style: italic;
   margin-left: 1em;
-  opacity: 0.65;
   padding-left: 1em; }
 div#main blockquote span, div#footer blockquote span {
   display: block;
@@ -103,7 +103,7 @@ div#main blockquote img.vertical, div#main p img.vertical, div#main ol img.verti
   margin-right: auto;
   width: 75%; }
 div#main blockquote.entry-meta, div#main p.entry-meta, div#main ol.entry-meta, div#main ul.entry-meta, div#footer blockquote.entry-meta, div#footer p.entry-meta, div#footer ol.entry-meta, div#footer ul.entry-meta {
-  opacity: 0.65; }
+  color: #6a6a6a; }
 div#main blockquote:last-child, div#main p:last-child, div#main ol:last-child, div#main ul:last-child, div#footer blockquote:last-child, div#footer p:last-child, div#footer ol:last-child, div#footer ul:last-child {
   margin-bottom: 0; }
 div#main blockquote:last-child img, div#main p:last-child img, div#main ol:last-child img, div#main ul:last-child img, div#footer blockquote:last-child img, div#footer p:last-child img, div#footer ol:last-child img, div#footer ul:last-child img {
@@ -118,5 +118,8 @@ div#footer {
 div#footer span.nav {
   float: right; }
 
-body.short div {
+body.small div#container {
   max-width: 450px !important; }
+
+.center {
+  text-align: center; }

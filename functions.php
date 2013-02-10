@@ -46,3 +46,10 @@ function rp_time_ago() {
 		return 'A long time ago';
 	}
 }
+function rp_title() {
+	if (is_page() || is_single()) {
+		echo get_the_title();
+	} else {
+		echo '404';
+	}
+}

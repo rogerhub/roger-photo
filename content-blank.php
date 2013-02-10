@@ -4,5 +4,5 @@
  */
 ?>
 <article>
-<h2 class="entry-title">There ain't nothing here!</h2>
+<h2 class="entry-title center">There ain't nothing here!</h2>
 </article>

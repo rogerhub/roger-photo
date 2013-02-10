@@ -6,7 +6,7 @@
 get_header();
 
 ?>
-<body>
+<body <?php body_class(); ?>>
 <div id="container">
 <div id="main" role="main"><?php
 
@@ -28,7 +28,7 @@ get_header();
 		echo "No more posts.";
 	}
 
-?><span class="nav"><a href="/archive">Archive</a> | <a href="/contact">Contact the psycho</a></span></p>
+?><span class="nav"><a href="/archive">Contact the psycho</a></span></p>
 </div>
 </div>
 </body>

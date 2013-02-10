@@ -1,5 +1,5 @@
 <!doctype html>
 <html><head>
-<title>Roger: /</title>
+<title><?php rp_title(); ?></title>
 <?php wp_head(); ?>
 </head>

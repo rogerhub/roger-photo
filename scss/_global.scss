@@ -22,7 +22,7 @@ body {
 }
 div#container {
 	margin: auto;
-	max-width: 1166px;
+	max-width: 1272px;
 }
 
 div#main, div#footer {
@@ -45,9 +45,9 @@ div#main, div#footer {
 	}
 	blockquote {
 		border-left: 3px solid #ccc;
+		color: rgb(106, 106, 106);
 		font-style: italic;
 		margin-left: 1em;
-		opacity: 0.65;
 		padding-left: 1em;
 		span {
 			display: block;
@@ -90,7 +90,7 @@ div#main, div#footer {
 			}
 		}
 		&.entry-meta {
-			opacity: 0.65;
+			color: rgb(106, 106, 106);
 		}
 		&:last-child {
 			margin-bottom: 0;
@@ -113,6 +113,10 @@ div#footer {
 	}
 }
 
-body.short div {
+body.small div#container {
 	max-width: 450px !important;
+}
+
+.center {
+	text-align: center;
 }
