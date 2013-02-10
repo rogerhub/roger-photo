@@ -2,6 +2,7 @@
 
 function rp_register_assets() {
 	if (!is_admin()) {
+		wp_register_script('backstretch', get_template_directory_uri() . '/js/jquery.backstretch.min.js', array('jquery'));
 		wp_register_style('fonts', 'http://fonts.googleapis.com/css?family=Alike|Roboto:300,300italic,700,700italic&subset=latin');
 		wp_register_style('rogerphoto', get_template_directory_uri() . '/style.css');
 	}
@@ -10,11 +11,55 @@ add_action('init', 'rp_register_assets');
 
 function rp_enqueue_assets() {
 	if (!is_admin()) {
+		wp_enqueue_script('backstretch');
 		wp_enqueue_style('fonts');
 		wp_enqueue_style('rogerphoto');
 	}
 }
 add_action('wp_enqueue_scripts', 'rp_enqueue_assets');
+
+if ( !function_exists( 'optionsframework_init' ) ) {
+	define( 'OPTIONS_FRAMEWORK_DIRECTORY', get_template_directory_uri() . '/admin/' );
+	require_once dirname( __FILE__ ) . '/admin/options-framework.php';
+}
+
+function rp_inject_background() {
+	$bg_count = of_get_option('rp_background_count', false);
+	if ($bg_count) {
+		$bg = rand(0, $bg_count - 1);
+		echo '<script type="text/javascript">jQuery(document).ready(function() { jQuery.backstretch("' . addslashes(of_get_option('rp_background_' . $bg, '')) . '"); });</script>';
+	} else {
+		echo '<style type="text/css">';
+		echo 'html { background-color: #1d1d1d; }';
+		echo '</style>';
+	}
+}
+add_action('wp_head', 'rp_inject_background');
+
+function rp_inject_favicon() {
+	echo '<link rel="shortcut icon" href="' . addslashes(of_get_option('rp_favicon', '/favicon.ico')) . '" />';
+}
+add_action('wp_head', 'rp_inject_favicon');
+
+function rp_inject_logo () { ?>
+<script type="text/javascript">
+//<![CDATA[
+/*
+
+       oooo d8b oooo    ooo  .ooooo.
+       `888""8P  `88.  .8'  d88' `"Y8
+        888       `88..8'   888
+        888        `888'    888   .o8 .o.
+       d888b        .8'     `Y8bod8P' Y8P
+                .o..P'
+                `Y8P'
+
+*/
+//]]></script>
+<?php
+}
+add_action('wp_head', 'rp_inject_logo');
+
 
 function rp_time_ago() {
 	global $post;

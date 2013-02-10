@@ -1,21 +1,5 @@
 /* Global */
 
-body {
-	background:
-	radial-gradient(black 15%, transparent 16%) 0 0,
-	radial-gradient(black 15%, transparent 16%) 4px 4px,
-	radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
-	radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 4px 5px;
-	background:
-	-webkit-radial-gradient(black 15%, transparent 16%) 0 0,
-	-webkit-radial-gradient(black 15%, transparent 16%) 4px 4px,
-	-webkit-radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
-	-webkit-radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 4px 5px;
-	background-color:#1d1d1d;
-	background-size:8px 8px;
-
-}
-
 ::selection {
 	background: black;
 	color: white;
@@ -27,7 +11,6 @@ div#container {
 
 div#main, div#footer {
 	background: white;
-	box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
 	color: black;
 	font-family: Roboto, serif;
 	font-size: 14px;	
@@ -75,12 +58,12 @@ div#main, div#footer {
 		line-height: 1.4em;
 		margin-bottom: 0.5em;
 		img {
-			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.45);
 			box-sizing: border-box;
 			display: block;
 			height: auto;
 			margin: 1em;
 			margin-left: 0;
+			margin-right: 0;
 			padding: 0.3em;
 			width: 100%;
 			&.vertical {
@@ -91,6 +74,11 @@ div#main, div#footer {
 		}
 		&.entry-meta {
 			color: rgb(106, 106, 106);
+		}
+		&:first-child {
+			img {
+				margin-top: 0;
+			}
 		}
 		&:last-child {
 			margin-bottom: 0;

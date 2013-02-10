@@ -35,12 +35,6 @@ table {
   border-spacing: 0; }
 
 /* Global */
-body {
-  background: radial-gradient(black 15%, transparent 16%) 0 0, radial-gradient(black 15%, transparent 16%) 4px 4px, radial-gradient(rgba(255, 255, 255, 0.1) 15%, transparent 20%) 0 1px, radial-gradient(rgba(255, 255, 255, 0.1) 15%, transparent 20%) 4px 5px;
-  background: -webkit-radial-gradient(black 15%, transparent 16%) 0 0, -webkit-radial-gradient(black 15%, transparent 16%) 4px 4px, -webkit-radial-gradient(rgba(255, 255, 255, 0.1) 15%, transparent 20%) 0 1px, -webkit-radial-gradient(rgba(255, 255, 255, 0.1) 15%, transparent 20%) 4px 5px;
-  background-color: #1d1d1d;
-  background-size: 8px 8px; }
-
 ::selection {
   background: black;
   color: white; }
@@ -51,7 +45,6 @@ div#container {
 
 div#main, div#footer {
   background: white;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
   color: black;
   font-family: Roboto, serif;
   font-size: 14px;
@@ -90,12 +83,12 @@ div#main blockquote, div#main p, div#main ol, div#main ul, div#footer blockquote
   line-height: 1.4em;
   margin-bottom: 0.5em; }
 div#main blockquote img, div#main p img, div#main ol img, div#main ul img, div#footer blockquote img, div#footer p img, div#footer ol img, div#footer ul img {
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.45);
   box-sizing: border-box;
   display: block;
   height: auto;
   margin: 1em;
   margin-left: 0;
+  margin-right: 0;
   padding: 0.3em;
   width: 100%; }
 div#main blockquote img.vertical, div#main p img.vertical, div#main ol img.vertical, div#main ul img.vertical, div#footer blockquote img.vertical, div#footer p img.vertical, div#footer ol img.vertical, div#footer ul img.vertical {
@@ -104,6 +97,8 @@ div#main blockquote img.vertical, div#main p img.vertical, div#main ol img.verti
   width: 75%; }
 div#main blockquote.entry-meta, div#main p.entry-meta, div#main ol.entry-meta, div#main ul.entry-meta, div#footer blockquote.entry-meta, div#footer p.entry-meta, div#footer ol.entry-meta, div#footer ul.entry-meta {
   color: #6a6a6a; }
+div#main blockquote:first-child img, div#main p:first-child img, div#main ol:first-child img, div#main ul:first-child img, div#footer blockquote:first-child img, div#footer p:first-child img, div#footer ol:first-child img, div#footer ul:first-child img {
+  margin-top: 0; }
 div#main blockquote:last-child, div#main p:last-child, div#main ol:last-child, div#main ul:last-child, div#footer blockquote:last-child, div#footer p:last-child, div#footer ol:last-child, div#footer ul:last-child {
   margin-bottom: 0; }
 div#main blockquote:last-child img, div#main p:last-child img, div#main ol:last-child img, div#main ul:last-child img, div#footer blockquote:last-child img, div#footer p:last-child img, div#footer ol:last-child img, div#footer ul:last-child img {
