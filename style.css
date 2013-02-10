@@ -45,14 +45,17 @@ body {
   background: black;
   color: white; }
 
+div#container {
+  margin: auto;
+  max-width: 1166px; }
+
 div#main, div#footer {
   background: white;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
   color: black;
   font-family: Roboto, serif;
   font-size: 14px;
-  margin: 40px auto;
-  max-width: 1140px;
+  margin: 40px;
   padding: 26px; }
 div#main a, div#footer a {
   color: #24798C; }

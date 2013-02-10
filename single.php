@@ -7,6 +7,7 @@ get_header();
 
 ?>
 <body>
+<div id="container">
 <div id="main" role="main"><?php
 
 	the_post();
@@ -28,6 +29,7 @@ get_header();
 	}
 
 ?><span class="nav"><a href="/archive">Archive</a> | <a href="/contact">Contact the psycho</a></span></p>
+</div>
 </div>
 </body>
 <?php

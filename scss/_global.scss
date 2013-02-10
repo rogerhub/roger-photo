@@ -20,6 +20,10 @@ body {
 	background: black;
 	color: white;
 }
+div#container {
+	margin: auto;
+	max-width: 1166px;
+}
 
 div#main, div#footer {
 	background: white;
@@ -27,8 +31,7 @@ div#main, div#footer {
 	color: black;
 	font-family: Roboto, serif;
 	font-size: 14px;	
-	margin: 40px auto;
-	max-width: 1140px;
+	margin: 40px;
 	padding: 26px;
 	
 	a {
