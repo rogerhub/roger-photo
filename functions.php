@@ -14,7 +14,7 @@ function rp_enqueue_assets() {
 		wp_enqueue_style('rogerphoto');
 	}
 }
-add_action('wp_enqueue_style', 'rp_enqueue_assets');
+add_action('wp_enqueue_scripts', 'rp_enqueue_assets');
 
 function rp_time_ago() {
 	global $post;
@@ -28,8 +28,8 @@ function rp_time_ago() {
 		return 'Just now';
 	} else if ($difference < 1*60*60) {
 		return round($difference / 60) . ' minutes ago';
-	} else if ($difference < 5*60*60) {
-		return round($difference / (60*60) . ' hours ago';
+	} else if ($difference < 24*60*60) {
+		return round($difference / (60*60)) . ' hours ago';
 	} else if ($difference < 5*24*60*60) {
 		return round($difference / (24*60*60)) . ' days ago';
 	} else if ($difference < 3*7*24*60*60) {
@@ -43,6 +43,6 @@ function rp_time_ago() {
 	} else if ($difference < 10*365.25*24*60*60) {
 		return round($difference / (365.25*24*60*60)) . ' years ago';
 	} else {
-		return 'A long time ago'
+		return 'A long time ago';
 	}
 }
