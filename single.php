@@ -32,10 +32,9 @@ get_header();
 		}
 	}
 
-	?><span class="nav"><a href="/archive"><?php echo rp_meta(); ?></a></span></p>
+	?><span class="nav"><a href="/archive"><?php echo rp_meta(); ?></a></span><div class="clear"></div></p>
 </div>
 </div>
-</body>
 <?php
 
 get_footer();

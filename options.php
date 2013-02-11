@@ -56,6 +56,22 @@ function optionsframework_options() {
 			'type' => 'upload');
 
 	}
+	
+	$options[] = array(
+		'name' => 'Enable Google Analytics Tracking',
+		'desc' => 'Do you want to enable analytics?',
+		'id' => 'rp_enable_analytics',
+		'std' => '0',
+		'type' => 'checkbox');
+
+	$options[] = array(
+		'name' => 'Google Analytics Code',
+		'desc' => 'What is your Google Analytics Tracking Code? (e.g. UA-XXXXXXXX-X)',
+		'id' => 'rp_analytics_id',
+		'std' => '',
+		'type' => 'text');
+
+
 
 	return $options;
 }

@@ -36,6 +36,7 @@ table {
 
 /* Global */
 * {
+  position: relative;
   z-index: 3; }
 
 ::selection {
@@ -81,7 +82,8 @@ div#main h1, div#footer h1 {
   margin-bottom: 0.3em; }
 div#main h2, div#footer h2 {
   font-size: 2em;
-  line-height: 1.4em; }
+  line-height: 1.2em;
+  margin-bottom: 0.1em; }
 div#main blockquote, div#main p, div#main ol, div#main ul, div#footer blockquote, div#footer p, div#footer ol, div#footer ul {
   line-height: 1.4em;
   margin-bottom: 0.5em; }
@@ -113,7 +115,11 @@ div#main ol, div#main ul, div#footer ol, div#footer ul {
 
 div#footer {
   margin-top: 0; }
-div#footer span.nav {
+div#footer div.clear {
+  clear: both; }
+div#footer p {
+  margin: 0; }
+div#footer p span.nav {
   float: right; }
 
 body.small div#container {

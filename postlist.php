@@ -31,7 +31,6 @@ if (!count($recentposts)) {
 <p class="center"><a href="<?php echo get_home_url(); ?>">To blog index</a></p>
 </div>
 </div>
-</body>
 <?php
 
 get_footer();

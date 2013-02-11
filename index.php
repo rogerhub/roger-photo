@@ -13,7 +13,6 @@ if (!count($recent_posts)) {
 	get_footer();
 ?></div>
 </div>
-</body>
 <?php get_footer(); 
 } else {
 	$most_recent_post = array_pop($recent_posts);

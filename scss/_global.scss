@@ -1,5 +1,6 @@
 /* Global */
 * {
+	position: relative;
 	z-index: 3;
 }
 
@@ -55,7 +56,8 @@ div#main, div#footer {
 	}
 	h2 {
 		font-size: 2em;
-		line-height: 1.4em;
+		line-height: 1.2em;
+		margin-bottom: 0.1em;
 	}
 	blockquote, p, ol, ul {
 		line-height: 1.4em;
@@ -99,8 +101,14 @@ div#main, div#footer {
 
 div#footer {
 	margin-top: 0;
-	span.nav {
-		float: right;
+	div.clear {
+		clear: both;
+	}
+	p {
+		margin: 0;
+		span.nav {
+			float: right;
+		}
 	}
 }
 
