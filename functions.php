@@ -125,7 +125,7 @@ Contact the sick freak
 Could there be any more?
 How much more could there be?
 Is there any more?
-Meta entities does available
+Meta entities thing available
 More trash and nonsense
 What kind of freak would write this stuff?
 What kind of twisted soul writes this?
