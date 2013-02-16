@@ -88,24 +88,27 @@ function rp_time_ago() {
 	if ($difference < 5*60) {
 		return 'Just now';
 	} else if ($difference < 1*60*60) {
-		return round($difference / 60) . ' minutes ago';
+		return rp_pluralize(round($difference / 60), ' minutes ago', ' minute ago');
 	} else if ($difference < 24*60*60) {
-		return round($difference / (60*60)) . ' hours ago';
+		return rp_pluralize(round($difference / (60*60)), ' hours ago', ' hour ago');
 	} else if ($difference < 5*24*60*60) {
-		return round($difference / (24*60*60)) . ' days ago';
+		return rp_pluralize(round($difference / (24*60*60)), ' days ago', ' day ago');
 	} else if ($difference < 3*7*24*60*60) {
-		return round($difference / (7*24*60*60)) . ' weeks ago';
+		return rp_pluralize(round($difference / (7*24*60*60)), ' weeks ago', ' week ago');
 	} else if ($difference < 5*7*24*60*60) {
-		return round($difference / (2*7*24*60*60)) . ' fortnights ago';
+		return rp_pluralize(round($difference / (2*7*24*60*60)), ' fortnights ago', ' fortnight ago');
 	} else if ($difference < 6*30.5*24*60*60) {
-		return round($difference / (30.5*24*60*60)) . ' months ago';
+		return rp_pluralize(round($difference / (30.5*24*60*60)), ' months ago', ' month ago');
 	} else if ($difference < 365.25*24*60*60) {
 		return 'Over half a year ago';
 	} else if ($difference < 10*365.25*24*60*60) {
-		return round($difference / (365.25*24*60*60)) . ' years ago';
+		return rp_pluralize(round($difference / (365.25*24*60*60)), ' years ago', ' year ago');
 	} else {
 		return 'A long time ago';
 	}
+}
+function rp_pluralize($n, $plural, $singular) {
+	return $n . (($n == 1) ? $singular : $plural);
 }
 function rp_title() {
 	if (is_page() || is_single()) {
