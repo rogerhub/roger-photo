@@ -15,11 +15,16 @@ get_header();
 
 ?></div>
 <div id="footer" role="footer">
-<p><?php
+<p id="nextlinks"><?php
 
 	ob_start();
 	previous_post_link('%link');
 	$prevlink = ob_get_contents();
+	ob_end_clean();
+
+	ob_start();
+	next_post_link('%link');
+	$nextlink = ob_get_contents();
 	ob_end_clean();
 
 	if ($prevlink) {
@@ -32,7 +37,8 @@ get_header();
 		}
 	}
 
-	?><span class="nav"><a href="/archive"><?php echo rp_meta(); ?></a></span><div class="clear"></div></p>
+	?><span class="nav"><a href="/archive" rel="meta"><?php echo rp_meta(); ?></a></span><div class="clear"></div></p>
+<p id="prevlinks"><?php if ($nextlink) { echo $nextlink; } ?></p>
 </div>
 </div>
 <?php

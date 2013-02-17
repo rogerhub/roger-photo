@@ -112,6 +112,8 @@ div#main ol, div#main ul, div#footer ol, div#footer ul {
   list-style-type: square;
   margin-left: 25px;
   padding-left: 15px; }
+div#main p#prevlinks, div#footer p#prevlinks {
+  display: none; }
 
 div#footer {
   margin-top: 0; }

@@ -3,6 +3,7 @@
 function rp_register_assets() {
 	if (!is_admin()) {
 		wp_register_script('backstretch', get_template_directory_uri() . '/js/jquery.backstretch.min.js', array('jquery'));
+		wp_register_script('main', get_template_directory_uri() . '/js/roger-photo.js', array('jquery'));
 		wp_register_style('fonts', 'http://fonts.googleapis.com/css?family=Alike|Roboto:300,300italic,700,700italic&subset=latin');
 		wp_register_style('rogerphoto', get_template_directory_uri() . '/style.css');
 	}
@@ -12,6 +13,7 @@ add_action('init', 'rp_register_assets');
 function rp_enqueue_assets() {
 	if (!is_admin()) {
 		wp_enqueue_script('backstretch');
+		wp_enqueue_script('main');
 		wp_enqueue_style('fonts');
 		wp_enqueue_style('rogerphoto');
 	}
